@@ -1,0 +1,81 @@
+.meus-filmes {
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.meus-filmes h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.meus-filmes .filme-zerado {
+  font-size: 20px;
+  color: #ff4f4f;
+  text-align: center;
+}
+
+.meus-filmes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.meus-filmes li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.meus-filmes .filme-imagem {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.meus-filmes li:last-child {
+  border-bottom: none;
+}
+
+.meus-filmes li span {
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+.meus-filmes li div {
+  display: flex;
+  align-items: center;
+}
+
+.meus-filmes .detalhes-link {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #116feb;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.meus-filmes .detalhes-link:hover {
+  background-color: #0a4da3;
+}
+
+.meus-filmes .excluir-button {
+  padding: 5px 10px;
+  background-color: #ff4f4f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.meus-filmes .excluir-button:hover {
+  background-color: #e84141;
+}
