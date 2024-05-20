@@ -1,4 +1,7 @@
+import { AuthProvider } from '@/contexts/AuthContext';
 import '../../styles/globals.scss';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const metadata = {
   title: 'SujeitoPizzaria',
@@ -7,12 +10,17 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+       <AuthProvider>
+          <ToastContainer autoClose={3000} />
+          {children}
+       </AuthProvider>
+      </body>
     </html>
   )
 }
